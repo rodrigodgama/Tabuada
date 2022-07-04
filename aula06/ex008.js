@@ -8,8 +8,6 @@
 //     console.log(`Você é Brasileio!`);
 // }
 
-
-
 // const pais = `Russia`
 // console.log(`Você mora no ${pais}`);
 // if (pais !== `Brasil` ) {
@@ -17,10 +15,6 @@
 // }else{
 //     console.log(`você é Brasileiro`);
 // }
-
-
-
-
 
 
 // var vel = (20)

@@ -1,25 +1,17 @@
-function carregar() {
-    var msg = window.document.getElementById('msg')
-    var img = window.document.getElementById('imagem')         
-    var data = new Date()
-    var hora = data.getHours()
-    
-    
-    msg.innerHTML = `Agora são ${hora} horas.`
-    if (hora >= 0 && hora < 12) {
-        //BOM DIA!
-        img.src = "fotos/manha.png"
-        document.body.style.background = '#e2cd9f'
-        
-    } else if (hora >= 12 && hora <= 18) {
-        //BOA TARDE!
-        img.src = 'fotos/tarde.png'
-        document.body.style.background ='#b9846f'
-    } else {
-        //BOA NOITE!
-        img.src = 'fotos/noite.png'
-        document.body.style.background = '#515154'
-        console.log(msg.id);        
-    }
+const numero = document.querySelector('#txtn');
+const pesquisa = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
+function codigo() {
+    const res = document.querySelector('.resultado')
+    if (numero.value === "") {
+        alert(`[Erro] campo obrigatorio`)
+    } else {
+        for (let i = 0; i < pesquisa.length; i++) {
+            res.innerHTML += (`${numero.value} * ${pesquisa[i]} =  ${numero.value * pesquisa[i] }  `)
+           const pularLinha =  document.createElement('br')
+           res.appendChild(pularLinha)
+        }
+    }
 }
+
+
